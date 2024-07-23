@@ -1,0 +1,175 @@
+/* Figaro Cat Clinic SAMPLE CSS */
+/* Rev: CF, AC, ??? */
+
+* { box-sizing: border-box; }
+header, nav, main, footer {
+	display: block;
+}
+body {
+	background-color: #5280C5;
+	background-image: url(gradientblue.jpg); 
+	color: #003366 ;
+	font-family: Verdana, Arial, sans-serif;
+}
+header { background-color: #000066;
+	background-image: url(kittens.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+}
+h1 { line-height: 250%;
+ 	margin-bottom: 0;
+	font-size: 3em;
+	padding: .2em;
+	text-shadow: 3px 3px 3px #CCCCCC;
+
+}
+nav { font-weight: bold;  
+	padding: 5px;
+	float: left;
+	width: 180px;
+}
+nav ul { list-style-type: none; }
+nav a { text-decoration: none; }
+nav a:link { color: #000066; }
+nav a:visited { color: #5280C5; }
+nav a:hover { color: #3262A3; }
+table, th, td {
+	border: 2px;
+	border-style: dotted;
+	border-color: DarkBlue;
+	border-collapse: collapse;
+}
+td, th {
+	padding: 0.5em;
+	border: 1px dotted DarkBlue;
+}
+.category { 
+	font-weight: bold;
+	color: #5280C5;
+	font-family: Georgia, "Times New Roman", serif; 
+	text-shadow: 1px 1px #667;
+}
+img {
+	border-style: none;
+}
+dt {
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #5280C5;
+	font-family: Georgia, "Times New Roman", serif;	 
+}
+main {
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-left: 180px;
+	background-color: #FFFFFF;
+	border: 1px solid #AEC3E3;
+}
+footer {
+	font-size: .70em;
+	font-style: italic;
+	text-align: center;
+	background-color: #AEC3E3;
+	margin-left: 180px;
+	padding: 1em;
+}
+#wrapper {
+	width: 80%;
+        margin-right: auto;
+	margin-left: auto;
+	background-color: #F0F0F0;
+	min-width: 700px;
+}
+#mobile {
+	display: none;
+}
+#desktop {
+	display: inline;
+}
+@media only screen and (max-width: 1024px) {
+	body {
+		margin: 0em;
+		padding: 0em;
+		background-color: white;
+		background-image: none;
+	}
+	#wrapper {
+		min-width: 0px;
+		width: auto;
+		margin: 0em;
+	}
+	h1 {
+		margin: 0em;
+		font-size: 1.8em;
+		line-height: 200%;
+	}
+	nav li {
+		display: inline-block;
+	}
+	nav a {
+		padding: 1em;
+		font-size: 1.2em;
+	}
+	nav ul {
+		text-align: center;
+		padding: 0em;
+		margin: 0em;
+	}
+	main {
+		font-size: 90%;
+		margin: 0em;
+		padding-left: 2em;
+	}
+	footer {
+		margin: 0em;
+	}
+}
+@media only screen and (max-width: 768px) {
+	header {
+		background: url(lilkitten.gif)0 0;
+		
+	}
+	h1 {
+		font-size: 1.5em;
+		line-height: 120%;
+	}
+	nav a {
+		display: block;
+		padding: 0.2em;
+		font-size: 1.3em;
+		border-bottom: solid 1px #330000;
+	}
+	nav li {
+		display: block;
+	}
+	nav ul {
+		text-align: left;
+	}
+	main {
+		padding-left: 1em;
+	}
+	.category {
+		text-shadow: none;
+	}
+	#mobile {
+		display: inline;
+	}
+	#desktop {
+		display: none;
+	}
+}
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 10em;
+	padding-right: 1em;
+}
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+#mySubmit {
+	margin-left: 9.5em;
+}
